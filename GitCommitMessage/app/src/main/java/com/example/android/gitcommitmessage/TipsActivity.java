@@ -9,6 +9,10 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by harshita.k on 23/09/15.
  */
@@ -24,12 +28,11 @@ public class TipsActivity extends AppCompatActivity  {
 
     public void viewNextTip(View v){
         if(tipIndex == 5){
-            Button nextBtn = (Button) findViewById(R.id.next_tip);
-            nextBtn.setText(R.string.finish_tip);
             submitFeedback();
         }else{
             tipIndex = tipIndex + 1;
             displayTipIndex();
+
         }
 
     }
@@ -47,6 +50,18 @@ public class TipsActivity extends AppCompatActivity  {
     public void displayTipIndex(){
         TextView tipIndexTextView = (TextView) findViewById(R.id.tip_index);
         tipIndexTextView.setText("Tip #"+tipIndex);
+
+        TextView tipHeaderTextView  = (TextView) findViewById(R.id.tip_header);
+        TextView tipMessageTextView  = (TextView) findViewById(R.id.tip_msg);
+
+        String tipHeaderId = "tip_"+tipIndex+"_header";
+        String tipMsgId = "tip_"+tipIndex+"_msg";
+        int tipMsgResourceID = this.getResources().getIdentifier(tipMsgId,"string", this.getApplicationInfo().packageName);
+        int tipHeaderResourceID = this.getResources().getIdentifier(tipHeaderId,"string", this.getApplicationInfo().packageName);
+        if (tipMsgResourceID != 0 && tipHeaderResourceID != 0) {
+            tipHeaderTextView.setText(tipHeaderResourceID);
+            tipMessageTextView.setText(tipMsgResourceID);
+        }
     }
 
     public void submitFeedback(){
