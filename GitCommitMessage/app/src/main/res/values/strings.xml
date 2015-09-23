@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Git Commit Message</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="finish_tip">Finish</string>
+    <string name="intro_msg">5 Useful Tips For A Better Commit Message!</string>
+    <string name="why_good_commit_heading">Why good commit messages matter?</string>
+    <string name="why_good_commit_msg">A well-cared for log is a beautiful and useful thing. git blame, revert, rebase, log, shortlog and other subcommands come to life. Reviewing others\' commits and pull requests becomes something worth doing, and suddenly can be done independently. Understanding why something happpened months or years ago becomes not only possible but efficient.</string>
+    <string name="action_settings">Settings</string>
+</resources>
