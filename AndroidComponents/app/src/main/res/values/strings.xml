@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidComponents</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="toggle_turn_on">Yes</string>
+    <string name="toggle_turn_off">No</string>
+    <string name="action_settings">Settings</string>
+</resources>
