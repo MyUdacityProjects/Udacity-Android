@@ -1,0 +1,3 @@
+[submodule "AndroidComponents"]
+	path = AndroidComponents
+	url = git@github.com-hkasera:hkasera/AndroidComponents.git
