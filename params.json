@@ -1,0 +1,6 @@
+{
+  "name": "Android @ Udacity",
+  "tagline": "Various android apps learnt in Udacity Android Course",
+  "body": "# Udacity Android\r\n\r\nIt contains various small android projects built while android.\r\n\r\n### Court Counter\r\nA small basket ball scoring app in android.\r\n\r\n### Git Commit Message\r\nAn app that explains how to write better git commit messages.\r\n\r\n### Happy Birthday\r\nAn app to make a happy birthday card.\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
